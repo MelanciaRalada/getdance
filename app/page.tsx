@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import BotaoCurtir from '@/components/BotaoCurtir';
-
+import Link from 'next/link';
 export const metadata: Metadata = {
   title: "Get Dance | Escola de Dança",
   description: "Encontre seu ritmo na Get Dance!",
@@ -37,10 +36,6 @@ const modalidades = [
   },
 ]
 
-
-
-
-
 export default function Page() {
   return (
 
@@ -53,13 +48,11 @@ export default function Page() {
         </a>
 
         <nav className="gd-nav">
-          <a href="#inicio">Início</a>
-          <a href="#aulas">Modalidades</a>
           <a href="#horarios">Horários</a>
           <a href="#sobre">Sobre nós</a>
         </nav>
 
-        <a href="#matricula" className="gd-header-button">
+        <a href="/cadastro" className="gd-header-button">
           Quero dançar! ↗
         </a>
       </header>
@@ -87,9 +80,6 @@ export default function Page() {
           <div className="gd-hero-buttons">
             <a href="#aulas" className="gd-primary-button">
               Conheça nossas aulas →
-            </a>
-            <a href="#sobre" className="gd-secondary-button">
-              Conheça a Get Dance
             </a>
           </div>
 
@@ -182,9 +172,6 @@ export default function Page() {
             Não importa se você está começando
             agora ou já tem experiência.
           </p>
-          <a href="#matricula" className="gd-primary-button">
-            Venha fazer parte! →
-          </a>
         </div>
       </section>
 
@@ -195,8 +182,8 @@ export default function Page() {
           Temos diferentes modalidades e turmas
           para você encontrar seu ritmo.
         </p>
-        <a href="#matricula" className="gd-primary-button">
-          Consultar horários →
+        <a href="/modalidade" className="gd-primary-button">
+          Consultar turmas →
         </a>
       </section>
 
@@ -214,8 +201,8 @@ export default function Page() {
           </p>
         </div>
 
-        <a href="mailto:contato@getdance.com" className="gd-enroll-button">
-          Quero me matricular ↗
+        <a href="https://wa.me/5511915699862?text=Olá! Gostaria de conhecer as aulas de dança." target="_blank" className="gd-enroll-button">
+          Fale pelo Whatsapp ↗
         </a>
       </section>
 
