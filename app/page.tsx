@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import BotaoCurtir from '@/components/BotaoCurtir';
+
 export const metadata: Metadata = {
   title: "Get Dance | Escola de Dança",
   description: "Encontre seu ritmo na Get Dance!",
@@ -35,8 +37,13 @@ const modalidades = [
   },
 ]
 
+
+
+
+
 export default function Page() {
   return (
+
     <main className="gd-page">
 
       <header className="gd-header">
@@ -220,6 +227,15 @@ export default function Page() {
         <span>© 2026 Get Dance</span>
       </footer>
 
+    </main>
+  )
+}
+
+
+export function Home() {
+  return (
+    <main className="p-8">
+      <BotaoCurtir />
     </main>
   )
 }
