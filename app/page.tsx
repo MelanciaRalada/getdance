@@ -217,12 +217,3 @@ export default function Page() {
     </main>
   )
 }
-
-
-export function Home() {
-  return (
-    <main className="p-8">
-      <BotaoCurtir />
-    </main>
-  )
-}
